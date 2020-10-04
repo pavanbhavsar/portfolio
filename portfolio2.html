@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY PORTFOLIO</title>
+    <link href="css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2fa0172b8d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        html
+        {
+            scroll-behavior: smooth;
+        }
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+/* ----------------------------- I N T R O ---------------------------------------------*/
+        header
+        {
+            position: sticky;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid transparent;
+            box-shadow: 0 8px 5px rgba(0,0,0,0.1);
+        }
+        header .list ul
+        {
+            position: absolute;
+            display: flex;
+            gap:100px;
+            right: 200px;
+        }
+        header .list ul li
+        {
+            font-family: sans-serif;
+            text-transform: uppercase;
+            font-size: 14px;
+            background: #FCF7FF;
+            list-style: none;
+            letter-spacing: 1px;
+
+            transition: all 0.5s linear;
+        }
+        header .list ul li a:hover
+        {
+            letter-spacing: 3px;
+            font-weight: bold;
+            color: #5d02ff;
+        }
+        header .list ul li a
+        {
+            text-decoration: none;
+            color: #1D1E2C;
+            transition: all 0.5s linear;
+        }
+        header .name
+        {
+            text-transform: uppercase;
+            margin-top: 10px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        .box
+        {
+            position:inherit;
+            width: 100%;
+            height: 552px;
+            background: #E3E3E3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box .info p
+        {
+            padding-left: 300px;
+            font-weight: 700;
+            font-size: 3rem;
+            line-height: 70px;
+            padding-bottom: 50px;
+        }
+
+
+        .box .info a
+        {
+            position: relative;
+            margin-left: 300px;
+            text-decoration: none;
+            color: #FCF7FF;
+            background: #5d02ff;
+            box-sizing: border-box;
+            padding: 12px 35px;
+            border-radius: 10px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            transition: all 0.5s ease-in-out;
+        }
+        .box .info a:hover
+        {
+            letter-spacing: 3px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        .box .imgbox img
+        {
+            height: 400px;
+            width: 400px;
+            margin-right: 200px;
+        }
+
+
+/* ----------------------------- A B O U T ---------------------------------------------*/
+        .about
+        {
+            height: 615px;
+            box-sizing: border-box;
+        }
+        .about .heading
+        {
+            display: flex;
+            justify-content: center;
+        }
+        .about .heading span
+        {
+            font-size: 35px;
+            text-shadow: 0 10px 8px 8px rgba(0,0,0,0.4);
+            letter-spacing: 4px;
+            font-weight: bold;
+            padding-top: 40px;
+            text-decoration: #5d02ff solid underline;
+            text-underline-offset: 10px;
+            color: #32343A;
+        }
+        .box2
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .about .about_img img
+        {
+            width: 230px;
+            height: 300px;
+            margin-left: 250px;
+            margin-top: 100px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px 8px rgba(0,0,0,0.07);
+        }
+        .box2 .details
+        {
+            width: 450px;
+            text-align: left;
+            margin-right: 150px;
+            margin-top: 100px;
+        }
+
+        .box2 .details p {
+            font-size: 22px;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            line-height: 30px;
+            font-weight: bold;
+            color:#32343A;
+        }
+        .box2 .details p span
+        {
+            color: #1D1E2C;
+            font-size: 25px;
+        }
+
+
+/* ----------------------------- S K I I L S ---------------------------------------------*/
+        .skills
+        {
+            height: 615px;
+            background: #E3E3E3;
+        }
+        .skills .title
+        {
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #32343A;
+            text-decoration: underline solid #5d02ff;
+            text-underline-offset: 10px;
+        }
+
+        .box3
+        {
+            display: flex;
+        }
+        .skills .box3 .left .subtitle
+        {
+            text-align: left;
+            padding-top: 50px;
+            padding-left: 100px;
+            font-size: 25px;
+            font-weight: bold;
+
+            color: #32343A;
+
+        }
+        .skills .box3 .left .para p
+        {
+            width: 400px;
+            margin-left: 100px;
+            margin-top: 30px;
+
+            font-size: 16px;
+            font-weight: bold;
+            color: #32343A;
+            line-height: 25px;
+        }
+
+        .skills .box3 .left .skill_1
+        {
+            width: 400px;
+            height: 45px;
+            border: 1px solid transparent;
+            margin-left: 100px;
+            margin-top: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 8px 8px rgba(0,0,0,0.07);
+
+            letter-spacing: 1px;
+            font-weight: bold;
+            color: #5a6266;
+
+            font-size: 14px;
+        }
+        .skills .box3 .left .skill_1 .basket1
+        {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
+        .skills .box3 .left .skill_1 .basket1 .skill_name1
+        {
+            padding: 0 20px;
+        }
+        .skills .box3 .left .skill_1 .basket1 .skill_percentage1
+        {
+            padding: 0 20px;
+        }
+        .skills .box3 .left .skill_1 .skill_bar1
+        {
+            background: #5d02ff;
+            width: 95%;
+            height: 3px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+
+
+
+
+
+
+
+        .skills .box3 .left .skill_2
+        {
+            width: 400px;
+            height: 45px;
+            border: 1px solid transparent;
+            margin-left: 100px;
+            margin-top: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 8px 8px rgba(0,0,0,0.07);
+
+            letter-spacing: 1px;
+            font-weight: bold;
+            color: #5a6266;
+            font-size: 14px;
+        }
+
+        .skills .box3 .left .skill_2 .basket2
+        {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+        .skills .box3 .left .skill_2 .basket2 .skill_name2
+        {
+            padding: 0 20px;
+        }
+        .skills .box3 .left .skill_2 .basket2 .skill_percentage2
+        {
+            padding: 0 20px;
+        }
+
+        .skills .box3 .left .skill_2 .skill_bar2
+        {
+            background: #5d02ff;
+            width: 85%;
+            height: 3px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+
+
+
+
+
+
+        .skills .box3 .left .skill_3
+        {
+            width: 400px;
+            height: 45px;
+            border: 1px solid transparent;
+            margin-left: 100px;
+            margin-top: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 8px 8px rgba(0,0,0,0.07);
+
+            letter-spacing: 1px;
+            font-weight: bold;
+            color: #5a6266;
+            font-size: 14px;
+        }
+
+        .skills .box3 .left .skill_3 .basket3
+        {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+        .skills .box3 .left .skill_3 .basket3 .skill_name3
+        {
+            padding: 0 20px;
+        }
+        .skills .box3 .left .skill_3 .basket3 .skill_percentage3
+        {
+            padding: 0 20px;
+        }
+
+        .skills .box3 .left .skill_3 .skill_bar3
+        {
+            background: #5d02ff;
+            width: 70%;
+            height: 3px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .box3 .right
+        {
+            margin-top: 70px;
+            margin-left: 100px;
+
+        }
+        .box3 .right img
+        {
+            height: 400px;
+            width: 550px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px 8px rgba(0,0,0,0.07);
+        }
+/* ----------------------------- C O N T A C T---------------------------------------------*/
+        .contact
+        {
+            height: 615px;
+        }
+        .contact .contact_title
+        {
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            color: #32343A;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 30px;
+            text-decoration: underline solid #5d02ff;
+            text-underline-offset: 10px;
+        }
+        .contact .contact_form
+        {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .contact .contact_form .input1
+        {
+            height: 40px;
+            width: 400px;
+            border:1px solid transparent;
+            border-radius: 5px;
+            box-shadow: 0 0 10px 8px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            padding-left: 20px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: #32343A;
+        }
+
+        .contact .contact_form .input2
+        {
+            margin-top: 50px;
+            height: 40px;
+            width: 400px;
+            border:1px solid transparent;
+            border-radius: 5px;
+            box-shadow: 0 0 10px 8px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            padding-left: 20px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: #32343A;
+        }
+
+
+        .contact .contact_form .input3
+        {
+            margin-top: 50px;
+            height: 150px;
+            width: 400px;
+            border:1px solid transparent;
+            border-radius: 5px;
+            box-shadow: 0 0 10px 8px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            font-weight: bold;
+            padding-bottom: 100px;
+            padding-left: 20px;
+            letter-spacing: 2px;
+            color: #32343A;
+        }
+        .contact .contact_form .enter_button
+        {
+
+            margin-top: 30px;
+            box-sizing: border-box;
+            width: 120px;
+            height: 40px;
+            letter-spacing: 2px;
+            background: #32343A;
+            border: none;
+            color: #FCF7FF;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 0 10px 8px rgba(0,0,0,0.1);
+            transition: all 0.5s linear;
+        }
+        .contact .contact_form .enter_button:hover
+        {
+            letter-spacing: 4px;
+            background: #5d02ff;
+        }
+        .navigation
+        {
+
+
+            height: 150px;
+            background: #5d02ff;
+            margin-top: 50px;
+            text-align: center;
+            padding-top: 20px;
+
+            font-weight: bold;
+            font-size: 30px;
+            color: #FCF7FF;
+            letter-spacing: 3px;
+        }
+        .navigation .title3
+        {
+            position: relative;
+        }
+        .navigation .title3:before
+        {
+            position: absolute;
+            content: '';
+            top:0;
+            left: 0;
+            width: 5%;
+            height: 2px;
+            background: #FCF7FF;
+            margin-left: 500px;
+            margin-top: 20px;
+        }
+
+        .navigation .title3:after
+        {
+            position: absolute;
+            content: '';
+            top:0;
+            left: 0;
+            width: 5%;
+            height: 2px;
+            background: #FCF7FF;
+            margin-left: 695px;
+            margin-top: 20px;
+        }
+        .navigation .list2 ul
+        {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .navigation .list2 ul li
+        {
+            padding: 0 50px;
+            list-style: none;
+        }
+        .navigation .list2 ul li a
+        {
+            text-decoration: none;
+            color: #FCF7FF;
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            body
+            {
+                overflow-y:scroll;
+                overflow-x: hidden;
+            }
+            header {
+                flex-direction: column;
+                height: 200px;
+                width: auto;
+                box-sizing: border-box;
+            }
+
+            header .name {
+                font-size: 30px;
+                letter-spacing: 5px;
+            }
+
+            header .list ul {
+                gap: 80px;
+                left: 60px;
+            }
+
+            .box {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .box .info p
+            {
+                padding:90px 0 0 15px;
+                font-size: 3rem;
+                letter-spacing: 2px;
+            }
+            .box .info a
+            {
+                margin-left: 15px;
+                top:30px;
+            }
+
+            .box .imgbox img
+            {
+                height: 300px;
+                width: 300px;
+                margin-left: 170px;
+                margin-top: 90px;
+            }
+
+            .about
+            {
+                height: auto;
+                box-sizing: border-box;
+            }
+            .box2
+            {
+                flex-direction: column;
+            }
+            .about .about_img img
+            {
+                width: 210px;
+                height: 270px;
+                margin-left: 10px;
+            }
+            .about .details
+            {
+                width: 300px;
+                margin-left: 150px;
+                padding-bottom: 40px;
+                text-align: center;
+            }
+            .about .details p
+            {
+                font-size: 18px;
+            }
+
+            .skills
+            {
+                height: auto;
+                box-sizing: border-box;
+            }
+            .box3
+            {
+                flex-direction: column;
+            }
+            .skills .box3 .left .subtitle
+            {
+                padding-left: 50px;
+            }
+            .skills .box3 .left .para p
+            {
+                width: 385px;
+                margin-left: 50px;
+            }
+            .skills .box3 .left .skill_1
+            {
+                margin-left: 50px;
+                width: 350px;
+            }
+            .skills .box3 .left .skill_2
+            {
+                margin-left: 50px;
+                width: 350px;
+            }
+            .skills .box3 .left .skill_3
+            {
+                margin-left: 50px;
+                width: 350px;
+            }
+
+            .box3 .right
+            {
+                margin-left: 50px;
+                padding-bottom: 30px;
+            }
+
+            .box3 .right img
+            {
+                width: 350px;
+                height: 300px;
+            }
+
+            .navigation .title3:before
+            {
+                margin-left: 100px;
+                width: 10%;
+            }
+            .navigation .title3:after
+            {
+                margin-left: 285px;
+                width: 10%;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="name">Pavan</div>
+    <div class="list">
+        <ul>
+            <li><a href="#abt">About</a></li>
+            <li><a href="#skills"> skills</a></li>
+            <li><a href="#contact"> contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="box">
+    <div class="info">
+        <p>Hi,<br>I'am Pavan<br>Web Designer</p>
+        <!--<input type="button" class="cont" value="Contact" id="cont">-->
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="imgbox">
+        <img src="pavan%20profile.%20(2).png" alt="">
+    </div>
+
+</div>
+
+
+<div class="about" id="abt">
+    <div class="heading">
+        <span>About</span>
+    </div>
+
+    <div class="box2">
+        <div class="about_img">
+            <img src="pavan%20about..png">
+        </div>
+        <div class="details">
+            <p><span>I'am Pavan.</span><br><br>A third year(3rd yr) IT student at Ganpat University.
+            <br>I am an enthusiast learner towards web developing and web designing.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="skills" id="skills">
+    <div class="title">Skills</div>
+
+    <div class="box3">
+        <div class="left">
+
+            <div class="subtitle">Professional skills</div>
+
+            <div class="para">
+                <p>Knowing how to write a paragraph is incredibly important.
+            Knowing how to write a paragraph is incredibly important.</p>
+            </div>
+
+            <div class="skill_1">
+                <div class="basket1">
+                        <div class="skill_name1">HTML</div>
+                        <div class="skill_percentage1">95%</div>
+                    </div>
+                    <div class="skill_bar1"></div>
+            </div>
+
+            <div class="skill_2">
+                <div class="basket2">
+                        <div class="skill_name2">CSS</div>
+                        <div class="skill_percentage2">85%</div>
+                    </div>
+                    <div class="skill_bar2"></div>
+            </div>
+
+
+            <div class="skill_3">
+                <div class="basket3">
+                        <div class="skill_name3">JAVASCRIPT</div>
+                        <div class="skill_percentage3">65%</div>
+                    </div>
+                    <div class="skill_bar3"></div>
+            </div>
+        </div>
+
+
+        <div class="right">
+            <img src="work3.jpg">
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="contact" id="contact">
+    <div class="contact_title">Contact</div>
+
+    <div class="contact_form" >
+        <form class="form" action="https://formspree.io/mzbjyoad" method="POST" >
+            <input type="text" class="input1" placeholder="Name" name="name" autocomplete="off" required="required">
+            <br>
+            <input type="email" class="input2" placeholder="Email" name="_replyto" autocomplete="off" required="required">
+            <br>
+            <input type="text"  class="input3" placeholder="Message" name="message" autocomplete="off" required="required">
+            <br>
+            <input type="submit" class="enter_button" value="Submit" name="Send">
+        </form>
+    </div>
+
+    <div class="navigation">
+        <div class="title3">Pavan</div>
+        <div class="list2">
+            <ul>
+                <li><a href="https://github.com/pavanbhavsar"><i class="fab fa-github"></i></i></a></li>
+                <li><a href="https://twitter.com/itz_p_b"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/pavanbhavsar/"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
+
+    const sr = ScrollReveal({
+        origin:'top',
+        distance:'40px',
+        duartion:3000,
+        reset:true
+    });
+
+
+
+
+    sr.reveal('.info',{delay:300});
+    sr.reveal('.name',{});
+    sr.reveal('.imgbox',{delay: 700});
+
+
+    sr.reveal('.heading',{delay:200});
+    sr.reveal('.underline3',{delay:500});
+    sr.reveal('.underline4',{delay:700});
+    sr.reveal('.about_img',{delay:1000});
+    sr.reveal('.details',{delay:1500});
+
+    sr.reveal('.title',{delay:200});
+    sr.reveal('.subtitle',{delay:500});
+    sr.reveal('.para',{delay:700});
+    sr.reveal('.skill_1',{delay:900});
+    sr.reveal('.skill_2',{delay:1100});
+    sr.reveal('.skill_3',{delay:1300});
+
+    sr.reveal('.right',{delay:1700});
+
+    sr.reveal('.contact_title',{delay:200});
+    sr.reveal('.input1',{delay:400});
+    sr.reveal('.input2',{delay:700});
+    sr.reveal('.input3',{delay:1000});
+
+
+    sr.reveal('.title3',{delay:500});
+    sr.reveal('.fab fa-instagram',{delay:1900});
+    sr.reveal('.fab fa-twitter',{delay:2200});
+    sr.reveal('.fab fa-linkedin-in',{delay:2500});
+
+
+</script>
+
+</body>
+</html>
